@@ -28,7 +28,11 @@ html, body {
 	
 	z-index: -2;
 	padding: 105px 10% 25px 10%;
+	margin-left: auto;
+	margin-right: auto;
 	position: relative;
+
+	width: 1000px;
 }
 
 p, h1, h2 {
@@ -128,12 +132,6 @@ a:active {
 	color: darkgray !important;
 }
 
-.side-image {
-	width: 70%;
-	height: auto;
-	margin-left: -10%;
-}
-
 .front {
     position: absolute;
 	padding-top: 10px;
@@ -141,7 +139,7 @@ a:active {
 }
 
 .caption {
-	width: 40%;
+	width: 100%;
 	padding: 5%;
 }
 
@@ -161,7 +159,21 @@ a:active {
 }
 
 #popular {
+	padding: 50px;
+	height: 600px;
+}
+
+.popular-tab-item {
+	height: 500px;
+	width: 400px;
+	background-color: #474E68;
 	padding: 20px;
+}
+
+.side-image {
+	height: 360px;
+	width: 360px;
+	object-fit: contain;
 }
 
 .dark {
@@ -173,19 +185,22 @@ a:active {
 }
 
 .socials {
-	width: 60%;
+	width: 100%;
 	display: flex;
-	align-items: center;
-}
-
-.socials a {
-	width: 25%;
-	padding: 5%;
+	flex-direction: column;
 }
 
 .socials a img {
 	aspect-ratio: 1;
-	width: 100%;
+	width: 50px;
+}
+
+.social-link {
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
 }
 
 #footer {
