@@ -27,7 +27,7 @@ html, body {
 	*/
 	
 	z-index: -2;
-	padding: 105px 10% 25px 10%;
+	padding: 105px 50px 25px 50px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -155,12 +155,19 @@ a:active {
 #contact-us {
 	padding: 20px;
 	display: block;
-	overflow-x: scroll;
 }
 
 #popular {
+	height: 615px;
+	padding-bottom: 15px;
+}
+
+#popular-container {
 	padding: 50px;
-	height: 600px;
+	display: flex;
+	gap: 50px;
+	overflow-x: scroll;
+	scrollbar-color: #404258 #474E68;
 }
 
 .popular-tab-item {
@@ -203,9 +210,48 @@ a:active {
 	gap: 10px;
 }
 
+.buy-page-image {
+	width: 900px;
+}
+
+#product-page {
+	background-color: #404258;
+}
+
+#product-caption {
+	background-color: #404258;
+	padding: 50px;
+}
+
+#shop-list {
+	width: 100%;
+}
+
+.shop-item {
+	margin: 20px 0;
+	height: 200px;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	background-color: #404258;
+	padding-right: 50px;
+}
+
+.shop-image {
+	margin-right: auto;
+	height: 200px;
+}
+
+button {
+	margin: 20px 0;
+	padding: 10px;
+	border-radius: 20px;
+}
+
 #footer {
 	background-color: #6B728E;
 	padding: 25px;
 	font-size: 10px;
 	text-align: center;
+	margin-top: auto;
 }
