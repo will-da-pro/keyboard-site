@@ -15,26 +15,6 @@ html, body {
     background-color: #474E68;
 }
 
-#main {
-	min-height: 100%;
-	
-	/*
-	background-image: url("media/matrix.gif");
-	background-repeat: no-repeat;
-	background-color: black;
-	background-attachment: fixed;
-	background-size: 100%;
-	*/
-	
-	z-index: -2;
-	padding: 105px 50px 25px 50px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-
-	width: 1000px;
-}
-
 p, h1, h2 {
 	color: white;
 }
@@ -51,7 +31,42 @@ h1 {
 	margin-bottom: 25px;
 }
 
+.front {
+	position: absolute;
+	padding-top: 10px;
+	z-index: 5;
+}
+
+.caption {
+	width: 100%;
+	padding: 5%;
+}
+
+.center {
+	text-align: center;
+}
+
+.dark {
+	background-color: #404258;
+}
+
+.darker {
+	background: #1D1F20;
+}
+
+#main {
+	min-height: 100%;
+	z-index: -2;
+	padding: 105px 50px 25px 50px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	max-width: 1000px;
+}
+
+
 /* Gradient border - https://codepen.io/mike-schultz/pen/NgQvGO */
+
 .gradient-border {
     --borderWidth: 3px;
 	background-color: #404258;
@@ -88,6 +103,8 @@ h1 {
 	}
 }
 
+/* Navbar */
+
 #navbar {
 	background-color: #404258;
 	height: 60px;
@@ -98,7 +115,7 @@ h1 {
 	flex-wrap: nowrap;
 	justify-content: left;
 	align-items: center;
-	box-shadow: 0px 2px 5px black;
+	box-shadow: 0px 2px 15px black;
 	position: fixed;
 	width: 100%;
 }
@@ -132,30 +149,7 @@ a:active {
 	color: darkgray !important;
 }
 
-.front {
-    position: absolute;
-	padding-top: 10px;
-	z-index: 5;
-}
-
-.caption {
-	width: 100%;
-	padding: 5%;
-}
-
-.cap-link {
-	width: 20%;
-	color: #00ff00 !important;
-}
-
-.center {
-	text-align: center;
-}
-
-#contact-us {
-	padding: 20px;
-	display: block;
-}
+/* Popular Tab */
 
 #popular {
 	height: 615px;
@@ -175,6 +169,7 @@ a:active {
 	width: 400px;
 	background-color: #474E68;
 	padding: 20px;
+	box-shadow: 0px 2px 15px black;
 }
 
 .side-image {
@@ -183,13 +178,7 @@ a:active {
 	object-fit: contain;
 }
 
-.dark {
-	background-color: #404258;
-}
-
-.darker {
-    background: #1D1F20;
-}
+/* Social Links */
 
 .socials {
 	width: 100%;
@@ -210,8 +199,10 @@ a:active {
 	gap: 10px;
 }
 
+/* Product Page */
+
 .buy-page-image {
-	width: 900px;
+	max-width: 100%;
 }
 
 #product-page {
@@ -223,23 +214,33 @@ a:active {
 	padding: 50px;
 }
 
+/* Shop Page */
+
 #shop-list {
 	width: 100%;
 }
 
 .shop-item {
 	margin: 20px 0;
-	height: 200px;
 	display: flex;
-	gap: 20px;
 	align-items: center;
 	background-color: #404258;
+	flex-wrap: wrap;
+	box-shadow: 0px 2px 15px black;
+}
+
+.shop-item p, .shop-item h2 {
+	padding: 20px;
+}
+
+.shop-item p {
 	padding-right: 50px;
 }
 
 .shop-image {
 	margin-right: auto;
-	height: 200px;
+	max-height: 200px;
+	max-width: 100%;
 }
 
 button {
@@ -248,10 +249,17 @@ button {
 	border-radius: 20px;
 }
 
+/* Footer */
+
 #footer {
 	background-color: #6B728E;
 	padding: 25px;
 	font-size: 10px;
 	text-align: center;
 	margin-top: auto;
+}
+
+#contact-us {
+	padding: 20px;
+	display: block;
 }
