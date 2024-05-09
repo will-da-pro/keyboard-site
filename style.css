@@ -17,10 +17,15 @@ html, body {
 
 p, h1, h2 {
 	color: white;
+	font-family: "Kanit", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 h1 {
 	font-size: 50px;
+	font-family: "Kanit", sans-serif;
+	font-weight: 600;
 }
 
 .container {
@@ -57,7 +62,7 @@ h1 {
 #main {
 	min-height: 100%;
 	z-index: -2;
-	padding: 105px 50px 25px 50px;
+	padding: 105px 10px 25px 10px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -109,13 +114,15 @@ h1 {
 	background-color: #404258;
 	height: 60px;
 	font-size: 18px;
-	font-family: Oswald;
+	font-family: "Archivo Black", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	color: white;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: left;
 	align-items: center;
-	box-shadow: 0px 2px 15px black;
+	box-shadow: 0px 1px 15px black;
 	position: fixed;
 	width: 100%;
 }
@@ -170,6 +177,7 @@ a:active {
 	background-color: #474E68;
 	padding: 20px;
 	box-shadow: 0px 2px 15px black;
+	border-radius: 10px;
 }
 
 .side-image {
@@ -214,6 +222,15 @@ a:active {
 	padding: 50px;
 }
 
+button {
+	margin: 20px 0;
+	padding: 10px;
+	border-radius: 20px;
+	font-family: "Kanit", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
 /* Shop Page */
 
 #shop-list {
@@ -241,12 +258,6 @@ a:active {
 	margin-right: auto;
 	max-height: 200px;
 	max-width: 100%;
-}
-
-button {
-	margin: 20px 0;
-	padding: 10px;
-	border-radius: 20px;
 }
 
 /* Footer */
