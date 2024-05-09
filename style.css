@@ -1,3 +1,5 @@
+/* Code by William D'Olier */
+
 @import url('https://fonts.googleapis.com/css?family=Oswald:200');
 
 * {
@@ -200,7 +202,7 @@ a:active {
 }
 
 .social-link {
-	padding: 20px;
+	padding: 30px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
